@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Plop</title>
+
+  <link rel='stylesheet' href='/static/vendor/bootstrap/dist/css/bootstrap.css' type='text/css' media='all' />
+  <link href="/static/vendor/fontawesome/css/all.css" rel="stylesheet" type="text/css"  />
+  <link rel="stylesheet" href="/static/css/main.css" />
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="mt-3 logo-title"><a href="/">Plop</a></h1>
+      </div>
+    </div>
+    <div id="roomChoice">
+      <div id="enter">
+          <h3 id="roomCreateTitle" class="title">Enter a room name to join a room</h3>
+          <input id="roomName" class="usernameInput" type="text" maxlength="14" placeholder="room name" />
+          <div class="mt-2"><span id="roomChoiceError" class="red"></span></div>
+
+          <div class="mt-4 mb-3"><input id="startOrJoinRoom" type="submit" value="GO" class="plop_button" /></div>
+
+          <h3 id="roomCreateTitle2" class="title">To create a room, enter the secret key</h3>
+          <input id="roomKey" class="usernameInput" type="password" maxlength="14" placeholder="secret key" />
+
+
+
+          <div class="row">
+            <div class="col-md-12 mt-4 usp_block">
+              <div class="usp">I dont want to sign up <span class="fas fa-check"></span></div>
+              <div class="usp">I dont want my chat saved <span class="fas fa-check"></span></div>
+              <div class="usp">I just want to transfer a file <span class="fas fa-check"></span></div>
+              <div class="usp">I dont care about emojis and gifs  <span class="fas fa-check"></span></div>
+              <div class="usp">I want it to be private and encrypted <span class="fas fa-check"></span></div>
+              <div class="usp">I want it to look like a terminal from the 90s <span class="fas fa-check"></span></div>
+              <div class="usp">I want the functionality to be limited and shit  <span class="fas fa-check"></span></div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div id="roomPanel" style="display: none;">
+      <div id="roomDetails" class="row">
+        <div class="col-md-12">
+          <div id="roomNameDetails"></div>
+          <div id="usersInRoom">Status: Waiting for connection ..</div>
+        </div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col-md-12">
+          <textarea id="senderMessage" rows="5"></textarea>
+          <textarea id="receiverMessage" rows="5"></textarea>
+        </div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col-md-12">
+          <input type="file" id="fileInput" />
+          <label for="fileInput" class="btn-2">upload file</label>
+
+          <input type="submit" class="" disabled id="sendFile" value="Send File" />
+          <input type="submit" class="" disabled id="abortButton" value="Abort File" />
+          <input type="submit" class="" id="hangUpButton" value="Hang Up" />
+        </div>
+      </div>
+
+
+      <div class="row mt-3">
+        <div class="col-md-6">
+          <div id="uploadFileName"></div>
+        </div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col-md-6">
+          <div class="progress">
+            <div id="sendProgress" aria-valuetext="send progress" class="progress-bar bg-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col-md-6">
+          <div class="progress">
+            <div id="receiveProgress" aria-valuetext="receive progress" class="progress-bar bg-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-2">
+        <div class="col-md-12">
+          <div id="bitrate"></div>
+          <div><a id="download"></a></div>
+          <div id="status"></div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- This file is automatically added/served when running "node index.js". -->
+    <script src="/socket.io/socket.io.js"></script>
+
+    <!--<script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>-->
+    <script type="text/javascript" src="/static/vendor/fontawesome/js/all.js"></script>
+    <script type="text/javascript" src="/static/vendor/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/static/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="static/js/adapter.js"></script>
+    <script src="static/js/main.js"></script>
+  </div>
+</body>
+
+</html>

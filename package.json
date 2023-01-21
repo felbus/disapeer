@@ -1,0 +1,11 @@
+{
+  "name": "webrtc-csssssodelab",
+  "version": "0.0.1",
+  "description": "WebRssTC codelab",
+  "dependencies": {
+    "express": "^4.16.4",
+    "node-static": "^0.7.11",
+    "shelljs": "^0.8.3",
+    "socket.io": "^2.2.0"
+  }
+}

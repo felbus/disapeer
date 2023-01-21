@@ -1,0 +1,20 @@
+{
+  "name": "fileplop",
+  "version": "1.0.0",
+  "authors": [
+    "felbus"
+  ],
+  "description": "fileplop",
+  "license": "mine",
+  "ignore": [
+    "**/.*",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.2.1",
+    "jquery": "^3.3.1",
+    "fontawesome": "^5.6.3"
+  }
+}

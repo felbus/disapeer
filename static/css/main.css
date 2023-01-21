@@ -1,0 +1,172 @@
+@import url(https://fonts.googleapis.com/css?family=VT323);
+
+html,body {
+  background-color: #1d1e22;
+  /*background-image: radial-gradient(rgba(0, 150, 0, 0.3), #1d1e22 110%);*/
+  color: #00dd00;
+  height: 100%;
+  /*font: 1.3rem Inconsolata, monospace;*/
+  font-family: 'VT323', Courier;
+}
+
+.logo-title a {
+  text-decoration: none;
+  color: #00dd00;
+}
+
+.progress {
+  background: transparent;
+  border: 1px solid #00dd00;
+  clear: both;
+  color: #00dd00;
+}
+
+.red {
+  color: red;
+}
+/*********** ENTER A ROOM *********** */
+
+#roomchoice {
+  width: 100%;
+}
+
+.usp_block {
+  text-align: center;
+}
+
+.usp {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+
+#enter {
+  text-align: center;
+  margin: 20px 0px auto;
+}
+
+
+#enter .usernameInput {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #ffffff;
+  outline: none;
+  padding-bottom: 5px;
+  text-align: center;
+  width: 300px;
+}
+
+#enter .title, .usernameInput {
+  color: #ffffff;
+  font-weight: 100;
+}
+
+#enter .usernameInput {
+  font-size: 150%;
+  letter-spacing: 3px;
+}
+
+.plop_button:hover {
+  cursor: pointer;
+}
+
+#hangUpButton {
+  border: 1px solid #ff0000;
+  color: #ff0000;
+}
+
+input[type=text],
+textarea {
+  background: transparent;
+  border: 1px solid #00dd00;
+  color: #00dd00;
+  font-family: 'VT323', Courier;
+  font-size: 1.2em;
+  position: relative;
+  width: 100%;
+  z-index: 10
+}
+
+textarea {
+  margin-bottom: 0px;
+  overflow: auto;
+  resize: none;
+}
+
+input[type=text]:focus,
+textarea:focus,
+input[type=submit]:focus,
+a.button:focus {
+  outline: 0;
+}
+
+input[type=submit],
+a.button {
+  background: transparent;
+  border: 1px solid #00dd00;
+  clear: both;
+  color: #00dd00;
+  display: inline-block;
+  font-family: 'VT323', Courier;
+  font-size: 1em;
+  margin-bottom: 0px;
+  opacity: 0.5;
+  padding: 2px 20px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  z-index: 10;
+}
+
+
+input[type=submit]:hover,
+a.button:hover {
+  background: #00dd00;
+  color: #383838;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+/*********** ENTER A ROOM *********** */
+
+
+[type="file"] {
+  height: 0;
+  overflow: hidden;
+  width: 0;
+}
+
+[type="file"] + label {
+  background: transparent;
+  border: 1px solid #00dd00;
+  clear: both;
+  color: #00dd00;
+  display: inline-block;
+  font-family: 'VT323', Courier;
+  font-size: 1em;
+  margin-bottom: 0px;
+  opacity: 0.5;
+  padding: 2px 20px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  z-index: 10;
+}
+
+[type="file"] + label.btn-2::before {
+  height: 100%;
+  right: 130%;
+  line-height: 3.3;
+  position: absolute;
+  top: -5px;
+  transition: all 0.3s;
+}
+
+[type="file"] + label.btn-2:hover {
+  background-color: #497f42;
+  cursor: pointer;
+}
+
+[type="file"] + label.btn-2:hover::before {
+  /*right: 75%;*/
+}
